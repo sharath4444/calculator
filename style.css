@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2fdc5a55;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #76cec5;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+header img.header-logo {
+    width: 50px; 
+    height: 50px;
+    margin-right: 15px; 
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+header:hover {
+    background-color: #444;
+    color: #ffffff;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #76cec5;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+footer p {
+    font-size: 1rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+footer:hover {
+    background-color: #444;
+    color: #ffffff;
+}
+
+footer p:hover {
+    transform: scale(1.05);
+}
+
+
+.calculator {
+    background-color: #c6e771;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 360px;
+    width: 100%;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #76cec5;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    background-color: #d27ecc;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e1bce5;
+}
+
+.operator {
+    background-color: #ff9800;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e68900;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.equal {
+    background-color: #4caf50;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #45a049;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .btn {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
