@@ -11,7 +11,7 @@ A responsive and visually appealing calculator built with HTML, CSS, and JavaScr
 
 ## Live Demo
 
-You can try out the live version of the calculator at: [Live Demo](https://your-live-demo-link.com) <!-- Replace with your live demo link -->
+You can try out the live version of the calculator at: [Live Demo](https://sharath4444.github.io/calculator/) <!-- Replace with your live demo link -->
 
 ## Technologies Used
 
